@@ -1,5 +1,6 @@
 from plugins.wp_plugin_detector import detect_plugins
 from api.nvd_client import fetch_nvd_vulnerabilities
+import time
 
 PLUGIN_ALIASES = {
     "wp-logo-showcase-responsive-slider-slider": "logo-showcase-responsive-slider",
