@@ -21,8 +21,8 @@ def fetch_plugin_vulnerabilities(plugin_slug):
                 for vuln in vulnerabilities
             ]
         else:
-            print(f"⚠️ فشل في جلب بيانات {plugin_slug} (Status {response.status_code})")
+            print(f"⚠️ Failed to retrieve data {plugin_slug} (Status {response.status_code})")
             return []
     except Exception as e:
-        print(f"⚠️ خطأ أثناء الاتصال بـ WPScan API: {e}")
+        print(f"⚠️ Error connecting to WPScan API: {e}")
         return []
