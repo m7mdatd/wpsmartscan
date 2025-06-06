@@ -1,5 +1,5 @@
 from plugins.wp_plugin_detector import detect_plugins
-from api.wpscan_client import fetch_plugin_vulnerabilities
+from api.nvd_client import fetch_nvd_vulnerabilities
 
 PLUGIN_ALIASES = {
     "wp-logo-showcase-responsive-slider-slider": "logo-showcase-responsive-slider",
@@ -35,7 +35,7 @@ def scan(url):
         for plugin in plugins:
             slug = PLUGIN_ALIASES.get(plugin, plugin)
             print(f"\n🔎 Checking in progress: {plugin} (slug: {slug})")
-            vulns = fetch_plugin_vulnerabilities(slug)
+            vulns = fetch_nvd_vulnerabilities(slug)
             found = vulns is not None
             display_vulnerabilities(plugin, vulns or [], found)
             time.sleep(1.5)  # ⏱️ Delay between API calls
