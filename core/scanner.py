@@ -38,5 +38,6 @@ def scan(url):
             vulns = fetch_plugin_vulnerabilities(slug)
             found = vulns is not None
             display_vulnerabilities(plugin, vulns or [], found)
+            time.sleep(1.5)  # ⏱️ Delay between API calls
     else:
         print("❌ No active add-ons were detected on this site..")
