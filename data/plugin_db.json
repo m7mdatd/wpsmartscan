@@ -1,0 +1,25 @@
+{
+  "wp-logo-showcase-responsive-slider-slider": {
+    "vulnerabilities": [
+      {
+        "title": "Unauthenticated Stored XSS",
+        "cve": "CVE-2022-1234",
+        "severity": "high",
+        "reference": "https://wpscan.com/vulnerability/12345"
+      }
+    ]
+  },
+  "mh-magazine": {
+    "vulnerabilities": []
+  },
+  "mh-loveit": {
+    "vulnerabilities": [
+      {
+        "title": "Arbitrary File Upload",
+        "cve": "CVE-2023-2222",
+        "severity": "critical",
+        "reference": "https://wpscan.com/vulnerability/67890"
+      }
+    ]
+  }
+}

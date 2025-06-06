@@ -1,0 +1,1 @@
+WPSCAN_API_TOKEN = "DbylprmzvFaPWlYY9UpyhdOsVW1qi9QE7XpmQvOG6z8"
